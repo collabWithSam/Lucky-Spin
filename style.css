@@ -1,0 +1,103 @@
+*{
+    margin: 0;padding: 0;
+}
+body{position: relative;
+    background-image: url(Assets/bg.png);
+    background-size: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* filter: brightness(90); */
+    /* z-index: -1; */
+
+}
+#bg_overlay{
+    position: fixed;
+    size: 100%;
+    background-color: gold;
+    mix-blend-mode:screen;
+    /* filter: brightness(90); */
+    
+}
+nav{
+    width: 100vw;
+    display: block;
+}
+.balance
+{
+    float: right;
+    height: 7ch;
+    width: 15ch;
+    background-color: forestgreen;
+    margin:3vh;
+    border-radius: 15%;
+
+}
+#shop{
+    border-radius: 15%;
+    height: 7ch;
+    width: 15ch;
+    background-color: forestgreen;
+    float:right;
+    margin:3vh;
+}
+.spinBox{
+    height: 60vh;
+    background-color: aqua;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spin{
+    height: 35vh;
+    width: 35vh;
+    border: black 2px solid;
+    border-radius: 50%;
+    background: conic-gradient(
+        red 0deg 36deg,
+        yellow 36deg 72deg,
+        red 72deg 108deg,
+        yellow 108deg 144deg,
+        red 144deg 180deg,
+        yellow 180deg 216deg,
+        red 216deg 252deg,
+        yellow 252deg 288deg,
+        red 288deg 324deg,
+        yellow 324deg 360deg
+      );
+      transition: transform 4s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#spinBtn{
+    height: 10vh;
+    width: 10vh;
+    background: linear-gradient(red  , yellow  );
+    border-radius: 50% ;
+    border: yellow 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: yellow;
+    -webkit-text-stroke: 0.5px black;
+    transition: all ease-in 0.1s;
+    
+}
+#spinBtn:hover{
+    filter: brightness(80%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#spinBtn:active{
+    background-color: blueviolet;
+}
+
+#Point{
+
+}
+
